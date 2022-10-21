@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KeduaFragment">
+
+    <EditText
+        android:id="@+id/txt_alas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="number"
+        android:hint="@string/alas"
+        android:autofillHints="Alas" />
+
+    <EditText
+        android:id="@+id/txt_tinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="number"
+        android:hint="@string/tinggi"
+        android:autofillHints="Tinggi" />
+
+    <Button
+        android:id="@+id/btn_hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hasil"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/hasil1"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+</LinearLayout>

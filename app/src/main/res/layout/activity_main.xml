@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <FrameLayout
+       android:id="@+id/container"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@+id/nav"
+       tools:ignore="UnknownId" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:onClick="fragmentPertama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/pertama"
+            tools:ignore="UsingOnClickInXml"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:onClick="fragmentKedua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/kedua"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:onClick="fragmentKetiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ketiga"
+            tools:ignore="UsingOnClickInXml" />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
